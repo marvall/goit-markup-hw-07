@@ -1,9 +1,6 @@
 /* ---- SECTION COMPANY ----*/
 .company-list {
   display: flex;
-  > li:not(:last-child) {
-    margin-right: 30px;
-  }
   .company-list-svg {
     fill: $svg-color;
   
@@ -11,6 +8,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  }
+}
+.company-list-item{
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
 .company-list-link {
@@ -34,9 +36,8 @@
   }
 }
 .company-list-svg {
-    .company-list-link:hover &,
-    .company-list-link:focus &{
-      fill: $main-action-color;
-    }
+  .company-list-link:hover &,
+  .company-list-link:focus &{
+    fill: $main-action-color;
   }
-  
+}

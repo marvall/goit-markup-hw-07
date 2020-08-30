@@ -28,6 +28,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &.state-active,
+  //&.state-active единственный случай конкотинации с классом, который я оставил
   &:hover,
   &:focus {
     background-color: $main-action-color;

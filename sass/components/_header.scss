@@ -1,12 +1,12 @@
 /* -------------  HEADER STYLE END  --------*/
 .header {
-  &-portfolio {
-    border-bottom: 1px solid #ececec;
-  }
   > .container {
     display: flex;
   }
 }  
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+}
   /* ---- Navigation menu ----*/
 .main-navigation {
   display: flex;
@@ -15,21 +15,9 @@
 .main-menu {
   display: flex;
   margin-left: 85px;  
-  &-link {
-    display: block;
-    color: $main-title-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.33em;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &-item:not(:last-child) {
+}
+.main-menu-item{
+  &:not(:last-child) {
   margin-right: 50px;
   }
 }
@@ -37,27 +25,27 @@
   display: flex;
   align-items: center;
   margin-left: auto; 
-  &-link {
-    display: block;
-    color: $main-text-color;
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.33em;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  li:not(:last-child) {
+} 
+.contact-menu-item{
+  &:not(:last-child) {
     margin-right: 50px;
   }
-}  
+}
 .main-menu-link,
 .contact-menu-link{
+  display: block;
+  color: $main-text-color;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.33em;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover{
     color: $main-action-color;
